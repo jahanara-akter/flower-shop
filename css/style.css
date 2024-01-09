@@ -1,0 +1,121 @@
+/* =========================== common css part start here ========================== */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* =========================== common css part end here =========================== */
+/* =========================== banner part start here ============================== */
+header #banner {
+    display: flex;
+    justify-content: center;
+    background-color: #E554731A;
+    padding: 50px 240px 0 0;
+}
+
+header #banner .container {
+    display: flex;
+    column-gap: 97px;
+}
+
+header #banner .container .text {
+    padding: 147px 0 147px 240px;
+}
+
+header #banner .container .text h1 {
+    color: #272727;
+    font-family: Lato;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 32px;
+    width: 708px;
+}
+
+header #banner .container .text p {
+    color: rgba(39, 39, 39, 0.60);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 32px;
+    width: 708px;
+}
+
+header #banner .container .text button {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 43px;
+    border-radius: 8px;
+    background: #E55473;
+    border: 0;
+}
+
+/* =========================== banner part end here ========================================= */
+/* =========================== Featured-Flowers part start here ============================= */
+#Featured-Flowers .container {
+    margin: 178px 240px 128px 240px;
+}
+
+#Featured-Flowers .container h2 {
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+#Featured-Flowers .container p {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 594px;
+    margin: 0 auto;
+}
+
+
+#Featured-Flowers .flower-image {
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+}
+
+#Featured-Flowers .flower-image .pink-flower-tree-one {
+    background: #A7216226;
+    border-radius: 300px 300px 0px 0px;
+    width: 464px;
+    text-align: center;
+    padding-top: 220px;
+}
+
+#Featured-Flowers .flower-image .pink-flower-tree-two {
+    background: #0597A026;
+    border-radius: 300px 300px 0px 0px;
+    width: 464px;
+    text-align: center;
+    padding-top: 178px;
+}
+
+#Featured-Flowers .flower-image .pink-flower-tree-three {
+    background: #477D1126;
+    border-radius: 300px 300px 0px 0px;
+    width: 464px;
+    text-align: center;
+    padding-top: 178px;
+}
+
+/* =========================== Featured-Flowers part end here ============================== */
+-
