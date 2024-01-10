@@ -1,50 +1,50 @@
-/* =========================== common css part start here ========================== */
+/* ================================common css start here========================================= */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-/* =========================== common css part end here =========================== */
-/* =========================== banner part start here ============================== */
-header #banner {
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ================================common css end here========================================= */
+/* ================================banner part start here========================================= */
+header {
+    background: rgba(229, 84, 115, 0.10);
+}
+
+.banner {
     display: flex;
-    justify-content: center;
-    background-color: #E554731A;
-    padding: 50px 240px 0 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header #banner .container {
-    display: flex;
-    column-gap: 97px;
+.banner .banner-text {
+    max-width: 708px;
 }
 
-header #banner .container .text {
-    padding: 147px 0 147px 240px;
-}
-
-header #banner .container .text h1 {
+.banner .banner-text h1 {
     color: #272727;
     font-family: Lato;
     font-size: 80px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    margin-bottom: 32px;
-    width: 708px;
 }
 
-header #banner .container .text p {
+.banner .banner-text p {
     color: rgba(39, 39, 39, 0.60);
     font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 32px;
-    width: 708px;
+    margin: 32px 0;
 }
 
-header #banner .container .text button {
+.banner .banner-text button {
     color: #FFF;
     font-family: Lato;
     font-size: 20px;
@@ -52,18 +52,35 @@ header #banner .container .text button {
     font-weight: 700;
     line-height: normal;
     padding: 20px 43px;
+    border: 0;
     border-radius: 8px;
     background: #E55473;
-    border: 0;
+    cursor: pointer;
+    transition: all 1s;
 }
 
-/* =========================== banner part end here ========================================= */
-/* =========================== Featured-Flowers part start here ============================= */
-#Featured-Flowers .container {
-    margin: 178px 240px 128px 240px;
+button:hover {
+    background: #e91e4a;
 }
 
-#Featured-Flowers .container h2 {
+.banner .banner-image img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* ================================banner part end here========================================= */
+/* ================================Our-Featured-Flowers part start here ================================ */
+#Our-Featured-Flowers {
+    padding: 178px 0 128px 0;
+}
+
+.section-heading {
+    max-width: 594px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-heading h2 {
     color: #272727;
     text-align: center;
     font-family: Lato;
@@ -74,7 +91,7 @@ header #banner .container .text button {
     margin-bottom: 24px;
 }
 
-#Featured-Flowers .container p {
+.section-heading p {
     color: rgba(39, 39, 39, 0.60);
     text-align: center;
     font-family: Lato;
@@ -82,40 +99,284 @@ header #banner .container .text button {
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    width: 594px;
-    margin: 0 auto;
 }
 
-
-#Featured-Flowers .flower-image {
+.section-content {
     display: flex;
-    column-gap: 24px;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+}
+
+.flower-image {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+    padding: 110px 76px 0;
+    height: 538px;
+    display: flex;
+    align-items: end;
+}
+
+.flower-image img {
+    width: 100%;
+}
+
+.two {
+    background: rgba(5, 151, 160, 0.15);
+    padding: 55px 47px 51px 47px;
+}
+
+.three {
+    background: rgba(71, 125, 17, 0.15);
+}
+
+.flower {
+    margin-top: 48px;
+}
+
+.flower p {
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    text-decoration-line: underline;
+    margin-top: 32px;
+}
+
+.section-last-part {
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 128px;
+    padding: 86px 0 87px;
+}
+
+.section-last-part p {
+    color: rgba(39, 39, 39, 0.80);
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    margin-top: 24px;
+
+}
+
+/* ================================Our-Featured-Flowers part end here ================================ */
+/* ================================ hot deal part start here ================================ */
+#hot-deal {
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+    padding: 100px 0;
+    margin: 128px 0;
+}
+
+#hot-deal .container {
+    display: flex;
     justify-content: center;
 }
 
-#Featured-Flowers .flower-image .pink-flower-tree-one {
-    background: #A7216226;
-    border-radius: 300px 300px 0px 0px;
-    width: 464px;
+#hot-deal .container .text {
+    max-width: 594px;
     text-align: center;
-    padding-top: 220px;
+    padding: 130px 0 162px;
 }
 
-#Featured-Flowers .flower-image .pink-flower-tree-two {
-    background: #0597A026;
-    border-radius: 300px 300px 0px 0px;
-    width: 464px;
-    text-align: center;
-    padding-top: 178px;
+#hot-deal .container .text h4 {
+    color: #272727;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
 }
 
-#Featured-Flowers .flower-image .pink-flower-tree-three {
-    background: #477D1126;
-    border-radius: 300px 300px 0px 0px;
-    width: 464px;
-    text-align: center;
-    padding-top: 178px;
+#hot-deal .container .text h4 span {
+    color: #E55473;
 }
 
-/* =========================== Featured-Flowers part end here ============================== */
--
+#hot-deal .container .text p {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+#hot-deal .container .text button {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 43px;
+    border: 0;
+    border-radius: 8px;
+    background: #E55473;
+    cursor: pointer;
+}
+
+/* ================================ hot deal part end here ================================ */
+/* ================================ instragram part start here ================================ */
+#instragram .instragram-heading {
+    max-width: 594px;
+    margin: 0 auto;
+}
+
+#instragram .instragram-heading h3 {
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+#instragram .instragram-heading p {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+#instragram .image {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 128px;
+}
+
+/* ================================ instragram part end here ================================ */
+/* =============================latest deal part start here ====================================== */
+#latest-deal {
+    margin-bottom: 128px;
+}
+
+#latest-deal .container {
+    background: url(../image/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    padding: 122px 0;
+}
+
+#latest-deal .heading h3 {
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+#latest-deal .heading p {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+#latest-deal .btn {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+#latest-deal .btn input {
+    color: rgba(39, 39, 39, 0.60);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 23px 0 22px 22px;
+    width: 700px;
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+}
+
+#latest-deal .btn button {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 43px;
+    border: 0;
+    border-radius: 8px;
+    background: #E55473;
+    cursor: pointer;
+}
+
+/* =============================latest deal part end here ====================================== */
+/* =============================footer  part start here ====================================== */
+footer {
+    background: #111010;
+    padding: 128px 0;
+}
+
+footer .container .text {
+    text-align: center;
+    max-width: 625px;
+    margin: 0 auto;
+}
+
+footer .container .text h2 {
+    color: #E55473;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+footer .container .text h2 span {
+    color: #FFF;
+}
+
+footer .container .text h3 {
+    color: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+footer .container .text p {
+    color: rgba(255, 255, 255, 0.40);
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* =============================footer part end here ====================================== */
